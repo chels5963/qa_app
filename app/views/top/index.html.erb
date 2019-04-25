@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charaset="utf-8">
+    <style>
+        body{
+            color: #333;
+            font-family: Verdana, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        ul{
+            margin: 0;
+            padding-left: 0;
+            text-align: center;
+        }
+
+        li{
+            display: inline-block;
+            padding: 25px 0;
+            width: 25%;
+            
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        p{
+            font-size: 20px;
+            padding-left: 350px;
+            margin-right: 0;
+            margin-bottom: 100px;
+            float:left; 
+        }
+        
+        .top-img{
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .laptop-img{
+            height: 30%;
+            width: 30%;
+        }
+
+        .logo-img{
+            height: 15%;
+            width: 15%;
+            float: right;
+            padding-right: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <%= image_tag 'top.jpg' , class: 'top-img'%>
+    <h1>侍エンジニア塾 サポートへようこそ</h1>
+
+    <div class="row">
+            <ul>
+                <li><%= image_tag 'laptop.jpg' , class: 'laptop-img' %><br><a href="">すでに無料体験レッスンを受けた</a></li>
+                <li><%= image_tag 'laptop.jpg' , class: 'laptop-img' %><br><a href="">レッスン受講中</a></li>
+                <li><%= image_tag 'laptop.jpg' , class: 'laptop-img' %><br><a href="">無料体験レッスンを検討している</a></li>
+                <li><%= image_tag 'laptop.jpg' , class: 'laptop-img' %><br><a href="">レッスンについて知りたい</a></li>
+                <li><%= image_tag 'laptop.jpg' , class: 'laptop-img' %><br><a href="https://www.sejuku.net/blog/curriculums?cid=menu">プログラミングについて</a></li>
+                <li><%= image_tag 'laptop.jpg' , class: 'laptop-img' %><br><a href="">プログラミング言語について</a></li>
+            </ul>
+    </div>
+
+    <br><br>
+    <hr>
+    <br>
+
+    <h1>侍エンジニア塾とは？</h1>
+        <p>日本初マンツーマン指導プログラミング塾。<br>
+            私たちは、プログラミングを通して、<br>
+            あなたの人生を変える手助けを行います。<br><br>
+        <a href="https://www.sejuku.net/" target="_blank">▶︎ 詳しくはこちら</a></p>
+        <%= image_tag 'logo.png' , class: 'logo-img' %>
+
+    <%# <br><br>
+    <hr>
+    <br>
+
+    <h1>世界平和をイノベーションで実現</h1>
+        <p>侍のビジョンである「世界平和」、"日本を世界一のイノベーション大国に      "<br>
+            という熱い想いに共感したメンバーが集まり、現在急成長中です。<br>
+            経営、事業家視点でともに会社をグロースさせていきたいメンバーを募集しています！</p>
+        <p><a href="https://corp.sejuku.net/" target="_blank">▶︎ 詳しくはこちら</a></p> %>
+</body>
+
+<footer>
+</footer>
+
+</html>
+
+
